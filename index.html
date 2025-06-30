@@ -4,20 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loan Application</title>
-  <link href="https://capital55.github.io/Capital66/">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    * {box-sizing: border-box;}
     body {
       margin: 0;
       font-family: 'Noto Sans Sinhala', Arial, sans-serif;
       background-color: #fefefe;
-      padding: 0;
     }
-
-    /* --- Navbar --- */
     .navbar {
       width: 100%;
       position: sticky;
@@ -30,21 +23,18 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       z-index: 1000;
     }
-
     .nav-left .home-btn {
       color: #333;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1em;
     }
-
     .nav-right {
       display: flex;
       align-items: center;
       gap: 10px;
       margin-left: auto;
     }
-
     .nav-right .lang-toggle {
       background-color: transparent;
       border: 2px solid #007bff;
@@ -54,7 +44,6 @@
       cursor: pointer;
       font-weight: bold;
     }
-
     .options-btn {
       font-size: 1.2em;
       border-radius: 50%;
@@ -65,61 +54,34 @@
       align-items: center;
       justify-content: center;
     }
-
-    @media (max-width: 600px) {
-      .navbar {
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .nav-right {
-        margin-left: auto;
-      }
-    }
-
     .container {
       max-width: 100%;
       margin: 0 auto;
       padding: 20px;
       background: #ffffff;
     }
-
     h2, h3, p {
       text-align: center;
     }
-
-    .slider-container,
-    .repayment,
-    .stats-cards,
-    .loan-offer-card,
-    .service-eligibility {
-      margin-top: 30px;
-      width: 100%;
-    }
-
     label {
       font-weight: bold;
       display: block;
       margin-bottom: 10px;
     }
-
     input[type="range"] {
       width: 100%;
     }
-
     .output {
       text-align: right;
       font-weight: bold;
       margin-top: 5px;
     }
-
     .repayment {
       background: #f0f0f0;
       padding: 15px;
       border-radius: 8px;
       font-size: 1.3rem;
     }
-
     .btn {
       display: block;
       width: 100%;
@@ -133,19 +95,16 @@
       font-weight: bold;
       animation: pulse 1.5s infinite;
     }
-
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(40,167,69, 0.7); }
       70% { box-shadow: 0 0 0 10px rgba(40,167,69, 0); }
       100% { box-shadow: 0 0 0 0 rgba(40,167,69, 0); }
     }
-
     .stats-cards {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
     }
-
     .card {
       flex: 1 1 45%;
       background: #2d0255;
@@ -155,20 +114,17 @@
       text-align: center;
       min-height: 120px;
     }
-
     .loan-offer-card {
       background: #ebebeb;
       padding: 20px;
       border-radius: 8px;
       text-align: center;
     }
-
     .loan-offer-card img {
       max-width: 100%;
       height: auto;
       margin-bottom: 10px;
     }
-
     .btn-loan {
       background-color: #007bff;
       color: white;
@@ -178,7 +134,6 @@
       border-radius: 6px;
       margin-top: 10px;
     }
-
     .service-eligibility {
       background-image: url('https://i.ibb.co/VckrkwZ6/lake-mountains.jpg');
       background-size: cover;
@@ -188,7 +143,6 @@
       height: 300px;
       position: relative;
     }
-
     .service-eligibility .overlay {
       position: absolute;
       top: 0;
@@ -204,17 +158,14 @@
       align-items: center;
       text-align: center;
     }
-
     .service-eligibility ul {
       list-style: none;
       padding: 0;
       margin: 10px 0;
     }
-
     .service-eligibility li {
       margin-bottom: 10px;
     }
-
     .btn-cta {
       background-color: #2e0fe0;
       color: white;
@@ -224,23 +175,6 @@
       font-weight: bold;
       margin-top: 10px;
     }
-
-    .benefits-container {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .message-box {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      line-height: 1.8;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
-      white-space: normal;
-    }
-
     .floating-button {
       position: fixed;
       bottom: 30px;
@@ -256,108 +190,62 @@
       backdrop-filter: blur(5px);
       z-index: 999;
     }
-
     .floating-button img {
       width: 40px;
       height: 40px;
     }
-   .floating-button img {
-      width: 40px;
-      height: 40px;
-    }
-
     footer {
       background-color: #000;
       color: #1aedd8;
       padding: 40px 20px;
       margin-top: 60px;
     }
-
     footer h2, footer h3 {
       color: white;
     }
-
     footer a {
       color: #2eff90;
       text-decoration: none;
     }
-
     footer a:hover {
       color: #fff;
     }
-
     .footer-container {
       max-width: 1000px;
       margin: auto;
     }
-
     .footer-links {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
     }
-
     .footer-column {
       min-width: 150px;
       margin-bottom: 20px;
     }
-
     .footer-contact {
       margin-top: 20px;
     }
-
     .footer-social {
       margin-top: 20px;
     }
-
     .footer-social a {
       margin-right: 10px;
       font-size: 1.5em;
     }
-    .benefit {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .benefit img {
-      width: 60px;
-      height: 60px;
-      margin-right: 20px;
-    }
-
-    .benefit h3 {
-      margin: 0 0 5px;
-      font-size: 1.1em;
-      color: #000;
-    }
-
-    .benefit p {
-      margin: 0;
-      color: #777;
-    }
-
     @media (max-width: 600px) {
       .card {
         flex: 1 1 100%;
       }
-
       .container {
         padding: 15px;
       }
-
-      .benefit {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .benefit img {
-        margin-bottom: 10px;
-      }
+    }
+    #warningMessage {
+      color: red;
+      text-align: center;
+      display: none;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -369,8 +257,7 @@
       <a href="https://capital55.github.io/Capital66/" class="home-btn">Home</a>
     </div>
     <div class="nav-right">
-       <a href="https://loan-cash1.github.io/online-loanE/"
-          class="lang-toggle">English / සිංහල</a>
+      <a href="https://loan-cash1.github.io/online-loanE/" class="lang-toggle">English / සිංහල</a>
       <button class="options-btn">☰</button>
     </div>
   </div>
@@ -382,16 +269,16 @@
 
     <div class="slider-container">
       <label for="loanRange">ඔබට අවශ්‍ය මුදල:</label>
-  <input type="range" id="loanRange" min="0" max="1000000" step="10000" value="0">
-<div class="output">රු <span id="loanAmount">0</span></div>
-      <div class="output">රු <span id="loanAmount">40000</span></div>
+      <input type="range" id="loanRange" min="0" max="1000000" step="10000" value="0">
+      <div class="output">රු <span id="loanAmount">0</span></div>
+      <div id="warningMessage">කරුණාකර මුදලක් තෝරන්න (Amount එක 0 නොවිය යුතුය)</div>
     </div>
 
     <div class="repayment">
-      මුළු ගෙවීම: රු <span id="repaymentAmount">44000</span><br>
-      පොලී: <span id="interestRate">10%</span><br>
-      කාලය: <span id="duration">6</span> මාස<br>
-      මාසික ගෙවීම: රු <span id="monthlyPayment">7333</span>
+      මුළු ගෙවීම: රු <span id="repaymentAmount">0</span><br>
+      පොලී: <span id="interestRate">N/A</span><br>
+      කාලය: <span id="duration">-</span> මාස<br>
+      මාසික ගෙවීම: රු <span id="monthlyPayment">0</span>
     </div>
 
     <a href="https://capital55.github.io/Capital66/" target="_blank" class="btn">ණයක් ඉල්ලන්න</a>
@@ -402,8 +289,7 @@
         <div style="font-size: 1.5rem;">322000</div>
       </div>
       <div class="card">
-        <div>අද දින ණය ලබාගත් සේවා දායකින්
-      </div>
+        <div>අද දින ණය ලබාගත් සේවාදායකයින්</div>
         <div style="font-size: 1.5rem;" id="newUsers">340</div>
       </div>
     </div>
@@ -416,7 +302,7 @@
       <a href="https://capital55.github.io/Capital66/" class="btn-loan">Get money</a>
     </div>
 
-    <div class="service-eligibility"> 
+    <div class="service-eligibility">
       <div class="overlay">
         <h3>Who can use our service?</h3>
         <ul>
@@ -427,73 +313,13 @@
         <a href="https://capital55.github.io/Capital66/" class="btn-cta">Get money now</a>
       </div>
     </div>
+  </div>
 
-    <div class="benefits-container"></div>
-
- <div class="floating-button">
+  <div class="floating-button">
     <img src="https://i.ibb.co/VcfMGQTz/New-Project.png" alt="Chat">
   </div>
-  
- <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <h2><span style="color: #2c59e1;">🟢</span> Capital Lanka</h2>
-      <div class="footer-links">
-        <div class="footer-column">
-          <p><a href="#">Home</a></p>
-          <p><a href="#">Apply for a loan</a></p>
-          <p><a href="#">Privacy policy</a></p>
-          <p><a href="#">Help</a></p>
-        </div>
-        <div class="footer-column">
-          <p><a href="#">How to pay</a></p>
-          <p><a href="#">About</a></p>
-          <p><a href="#">Terms & conditions</a></p>
-        </div>
-      </div>
-      <div class="footer-contact">
-        <h3>Contact us:</h3>
-        <p>📞 <a href="tel:0724561373">0724561373</a></p>
-        <p>✉ <a href="mailto:Capital@lanka.lk">help@LCapital.lk</a></p>
-        <p>⏰ Daily 8:00 AM - 10:30 PM</p>
-      </div>
-      <div class="footer-social">
-        <p>Follow us:</p>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-      </div>
-    </div>
-  </footer>
-    
- <div style="background-color: #f9f9f9; padding: 20px; font-family: 'Noto Sans Sinhala', sans-serif; font-size: 14px; line-height: 1.6; color: #333;">
-  <p><strong>Capital Lanka (PVT) LTD.</strong></p>
-  <p>සමාගම් ලියාපදිංචි අංකය: PV00264333 – කොළඹ සමාගම් රෙජිස්ට්‍රාර් ජනරාල් විසින් ප්‍රදානය කරන ලදී.</p>
 
- <p><strong>නිෂ්පාදන මට්ටම:</strong></p>
-<p>අවම වාර්ෂික පොළි අනුපාතය: 8%</p>
-<p>උපරිම වාර්ෂික පොළි අනුපාතය: 182.5%</p>
-<p>අවම ණය මුදල: රු.40,000</p>
-<p>උපරිම ණය මුදල: රු.1000,000</p>
-<p>අවම කාල සීමාව: 6 මාස</p>
-<p>උපරිම කාල සීමාව: 24 මාස</p>
-
-<p><strong>ගණනය කිරීමේ උදාහරණය (පොළිය සහිත මාසික වාරික ක්‍රමය):</strong></p>
-<p>දින 180 (මාස 6) සදහා රු.40,000ක මුදලක් ලබා ගත් විට:</p>
-<p>පොළිය රු.4,3200 (Annual Rate 8%)</p>
-<p>මුළු ආපසු ගෙවිය යුතු මුදල: රු.4,3200</p>
-<p>මාසික වාරික ගෙවීම: රු.43.200 / 6 = රු.7.200</p>
-<p>සියලුම අදාළ ගාස්තු දැනටමත් මුළු ණය මුදලට ඇතුළත් කර ඇත.</p>
-
-<p><strong>නෛතික ලිපිනය:</strong></p>
-<p>ලිපිනය:</p>
-
-221, හයි ලෙවල් පාර,
-පන්නිපිටිය 10230,
-ශ්‍රී ලංකා</p>
-
-  <p><em>© 2025 Capital Lanka. සියළුම හිමිකම් ඇවිරිණි.</em></p>
-</div>
-    
+  <!-- JavaScript -->
   <script>
     const range = document.getElementById("loanRange");
     const loanAmount = document.getElementById("loanAmount");
@@ -501,41 +327,47 @@
     const interestRate = document.getElementById("interestRate");
     const duration = document.getElementById("duration");
     const monthlyPayment = document.getElementById("monthlyPayment");
+    const warningMessage = document.getElementById("warningMessage");
 
-function updateValues(value) {
-  const amount = parseInt(value);
+    const newUsers = document.getElementById("newUsers");
+    let newUsersCount = parseInt(newUsers.textContent);
 
-  if (amount === 0) {
-    loanAmount.textContent = "0";
-    repaymentAmount.textContent = "0";
-    interestRate.textContent = "N/A";
-    duration.textContent = "-";
-    monthlyPayment.textContent = "0";
-    alert("Please select a valid amount greater than 0.");
-    return;
-  }
+    function updateValues(value) {
+      const amount = parseInt(value);
 
-  let interest = 0;
-  let months = 6;
+      if (amount === 0) {
+        warningMessage.style.display = "block";
+        loanAmount.textContent = "0";
+        repaymentAmount.textContent = "0";
+        interestRate.textContent = "N/A";
+        duration.textContent = "-";
+        monthlyPayment.textContent = "0";
+        return;
+      } else {
+        warningMessage.style.display = "none";
+      }
 
-  if (amount >= 40000 && amount <= 500000) {
-    interest = 0.08;
-  } else if (amount > 500000) {
-    interest = 0.13;
-  }
+      let interest = 0;
+      let months = 6;
 
-  if (amount > 70000) months = 12;
-  if (amount > 150000) months = 24;
+      if (amount >= 40000 && amount <= 500000) {
+        interest = 0.08;
+      } else if (amount > 500000) {
+        interest = 0.13;
+      }
 
-  const total = amount + amount * interest;
-  const monthly = total / months;
+      if (amount > 70000) months = 12;
+      if (amount > 150000) months = 24;
 
-  loanAmount.textContent = amount.toLocaleString();
-  repaymentAmount.textContent = Math.round(total).toLocaleString();
-  interestRate.textContent = (interest * 100) + "%";
-  duration.textContent = months;
-  monthlyPayment.textContent = Math.round(monthly).toLocaleString();
-}
+      const total = amount + amount * interest;
+      const monthly = total / months;
+
+      loanAmount.textContent = amount.toLocaleString();
+      repaymentAmount.textContent = Math.round(total).toLocaleString();
+      interestRate.textContent = (interest * 100) + "%";
+      duration.textContent = months;
+      monthlyPayment.textContent = Math.round(monthly).toLocaleString();
+    }
 
     range.addEventListener("input", (e) => {
       updateValues(e.target.value);
@@ -543,13 +375,13 @@ function updateValues(value) {
 
     updateValues(range.value);
 
-    function animateSlider(min, max, delay = 10) {
+    function animateSlider(min, max, delay = 1) {
       let direction = 1;
       let value = min;
       const interval = setInterval(() => {
         range.value = value;
         updateValues(value);
-        value += 1000 * direction;
+        value += 10000 * direction;
         if (value >= max) {
           direction = -1;
         } else if (value <= min) {
@@ -559,7 +391,12 @@ function updateValues(value) {
     }
 
     window.addEventListener("load", () => {
-     animateSlider(40000, 1000000, 1); // milliseconds
+      animateSlider(40000, 1000000, 1);
+
+      setInterval(() => {
+        newUsersCount += 2;
+        newUsers.textContent = newUsersCount;
+      }, 60000); // Every minute
     });
   </script>
 </body>
